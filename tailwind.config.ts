@@ -18,6 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			animation: {
+				"cursor-blink": "cursor-blink 1.5s steps(2) infinite",
+			},
+			keyframes: {
+				"cursor-blink": {
+					"0%": {
+						opacity: "0",
+					},
+					"100%": {
+						opacity: "1",
+					},
+				},
+			},
+		},
+		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
